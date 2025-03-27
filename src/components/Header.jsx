@@ -1,10 +1,11 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = ({ setCurrentPage, currentPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { id: 'home', label: 'Home' },
+    { id: '/', label: 'Home' },
     { id: 'about', label: 'About Us' },
     { id: 'programs', label: 'Programs' },
     { id: 'admissions', label: 'Admissions' },
@@ -15,18 +16,23 @@ const Header = ({ setCurrentPage, currentPage }) => {
   ]
 
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-white shadow-md -top-2 z-10 sticky">
       <div className="container py-4 flex items-center justify-between">
         <div className="flex items-center">
+          <Link to={`/Kids-Zone-Pre-School`} >
           <div className="text-2xl font-bold text-primary">
+            <span onClick={() => {setCurrentPage('home');
+              setIsMenuOpen(false)}} className="cursor-pointer">
             <span className="text-accent">Kids</span> Zone <span className="text-secondary">Pre-School</span>
+            </span>
           </div>
+          </Link>
         </div>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6">
           {navItems.map(item => (
-            <button
+            <Link to={item.id}
               key={item.id}
               onClick={() => setCurrentPage(item.id)}
               className={`py-2 transition duration-300 border-b-2 ${
@@ -36,7 +42,7 @@ const Header = ({ setCurrentPage, currentPage }) => {
               }`}
             >
               {item.label}
-            </button>
+            </Link>
           ))}
         </nav>
 
@@ -61,7 +67,9 @@ const Header = ({ setCurrentPage, currentPage }) => {
         <div className="md:hidden bg-white border-t border-gray-200">
           <div className="container py-3 flex flex-col space-y-3">
             {navItems.map(item => (
-              <button
+              
+              <Link
+              to={item.id}
                 key={item.id}
                 onClick={() => {
                   setCurrentPage(item.id)
@@ -73,8 +81,11 @@ const Header = ({ setCurrentPage, currentPage }) => {
                     : 'text-gray-600 hover:text-primary'
                 }`}
               >
+                 
                 {item.label}
-              </button>
+                </Link>
+              
+              
             ))}
           </div>
         </div>

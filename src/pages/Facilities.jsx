@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Facilities = ({ setCurrentPage }) => {
   return (
@@ -218,12 +219,13 @@ const Facilities = ({ setCurrentPage }) => {
             Experience our facilities firsthand by scheduling a campus tour. 
             Our staff will be happy to show you around and answer any questions you might have.
           </p>
-          <button 
+          <Link
+              to={'/Kids-Zone-Pre-Schoo/contact'}
             className="btn btn-primary"
             onClick={() => setCurrentPage('contact')}
           >
             Schedule a Visit
-          </button>
+          </Link>
         </div>
       </section>
     </div>

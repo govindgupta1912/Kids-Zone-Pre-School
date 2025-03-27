@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = ({ setCurrentPage }) => {
   return (
@@ -17,13 +18,14 @@ const Home = ({ setCurrentPage }) => {
                 can explore, learn, and grow.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="btn btn-primary">Learn More</button>
-                <button 
+                <Link to={'/Kids-Zone-Pre-School/about'} className="btn btn-primary">Learn More</Link>
+                <Link
+                to={'/Kids-Zone-Pre-School/contact'}
                   className="btn border border-primary text-primary hover:bg-primary/10"
                   onClick={() => setCurrentPage('contact')}
                 >
                   Contact Us
-                </button>
+                </Link>
               </div>
             </div>
             <div className="relative">
@@ -34,7 +36,7 @@ const Home = ({ setCurrentPage }) => {
                   className="rounded h-64 w-full object-cover" 
                 />
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-primary/90 text-white p-4 rounded-lg shadow-lg">
+              <div className="absolute -bottom-4 -left-2 bg-primary/90 text-white p-4 rounded-lg shadow-lg">
                 <p className="font-bold">Admissions Open!</p>
                 <p className="text-sm">Playgroup to Kindergarten</p>
               </div>
@@ -121,10 +123,12 @@ const Home = ({ setCurrentPage }) => {
         <div className="container text-center">
           <h2 className="text-3xl font-bold mb-4">Admissions are now open!</h2>
           <p className="text-xl mb-8">From Playgroup to Kindergarten</p>
-          <button className="bg-white text-primary hover:bg-gray-100 btn"
+          <Link
+          to={'/Kids-Zone-Pre-School/contact'}
+          className="bg-white text-primary hover:bg-gray-100 btn"
             onClick={() => setCurrentPage('contact')}>
             Contact us
-          </button>
+          </Link>
         </div>
       </section>
     </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Admissions = ({ setCurrentPage }) => {
   return (
@@ -23,10 +24,13 @@ const Admissions = ({ setCurrentPage }) => {
             <div className="bg-primary/5 p-8 rounded-lg shadow-sm mb-12">
               <h3 className="text-xl font-bold mb-4 text-primary">Admissions are now open!</h3>
               <p className="mb-4">We are currently accepting applications for the upcoming academic year.</p>
-              <button className="btn btn-primary"
+              <Link
+               to={'/Kids-Zone-Pre-School/contact'}
+              
+              className="btn btn-primary"
                 onClick={() => setCurrentPage('contact')}
               >
-                Contact Us</button>
+                Contact Us</Link>
             </div>
           </div>
           

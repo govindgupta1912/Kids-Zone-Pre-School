@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Footer = ({ setCurrentPage }) => {
   const currentYear = new Date().getFullYear()
   
@@ -28,19 +30,20 @@ const Footer = ({ setCurrentPage }) => {
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               {[
-                { id: 'home', label: 'Home' },
+                { id: '/', label: 'Home' },
                 { id: 'about', label: 'About Us' },
                 { id: 'programs', label: 'Programs' },
                 { id: 'admissions', label: 'Admissions' },
                 { id: 'contact', label: 'Contact Us' },
               ].map(item => (
                 <li key={item.id}>
-                  <button
+                  <Link
+                  to={item.id}
                     onClick={() => setCurrentPage(item.id)}
                     className="hover:text-primary"
                   >
                     {item.label}
-                  </button>
+                  </Link>
                 </li>
               ))}
             </ul>

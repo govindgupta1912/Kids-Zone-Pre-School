@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('all')
@@ -214,12 +215,13 @@ const Gallery = () => {
             Join the Kids Zone family and give your child the opportunity to create their own beautiful memories.
             Schedule a visit to our campus today!
           </p>
-          <button 
+          <Link
+           to={'/Kids-Zone-Pre-School/contact'} 
             className="btn btn-primary"
             onClick={() => setCurrentPage('contact')}
           >
             Schedule a Visit
-          </button>
+          </Link>
         </div>
       </section>
     </div>

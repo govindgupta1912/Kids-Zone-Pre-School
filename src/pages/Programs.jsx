@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Programs = ({ setCurrentPage }) => {
   return (
@@ -153,12 +154,13 @@ const Programs = ({ setCurrentPage }) => {
             Our diverse range of programs ensures that every child receives the attention and education they need to thrive.
             Contact us today to learn more about our programs or to schedule a visit.
           </p>
-          <button 
+          <Link
             className="btn btn-primary"
             onClick={() => setCurrentPage('contact')}
+            to={'/Kids-Zone-Pre-School/contact'}
           >
             Schedule a Visit
-          </button>
+          </Link>
         </div>
       </section>
     </div>
