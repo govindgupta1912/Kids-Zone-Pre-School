@@ -20,11 +20,13 @@ const Header = ({ setCurrentPage, currentPage }) => {
       <div className="container py-4 flex items-center justify-between">
         <div className="flex items-center">
           <Link to={``} >
-          <div className="text-2xl font-bold text-primary">
-            <span onClick={() => {setCurrentPage('home');
+          <div className="text-2xl h-14 w-52 font-bold text-primary">
+            {/* <span onClick={() => {setCurrentPage('home');
               setIsMenuOpen(false)}} className="cursor-pointer">
             <span className="text-accent">Kids</span> Zone <span className="text-secondary">Pre-School</span>
-            </span>
+            </span> */}
+            <img className='h-full w-full' src="kidsZoneSchoolLogo.jpeg" alt="logo" />
+
           </div>
           </Link>
         </div>
