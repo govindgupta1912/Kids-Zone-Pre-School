@@ -75,13 +75,13 @@ const approuter = createBrowserRouter(
    
     <Route path="" element={<App />}>
       <Route index element={<Home />} /> {/* Default Route for "/" */}
-      <Route path="about" element={<About />} />
-      <Route path="programs" element={<Programs />} />
-      <Route path="admissions" element={<Admissions />} />
-      <Route path="facilities" element={<Facilities />} />
-      <Route path="gallery" element={<Gallery />} />
-      <Route path="testimonials" element={<Testimonials />} />
-      <Route path="contact" element={<Contact />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/programs" element={<Programs />} />
+      <Route path="/admissions" element={<Admissions />} />
+      <Route path="/facilities" element={<Facilities />} />
+      <Route path="/gallery" element={<Gallery />} />
+      <Route path="/testimonials" element={<Testimonials />} />
+      <Route path="/contact" element={<Contact />} />
     </Route>
      {/* Route for ErrorPage without Header and Footer */}
      <Route path="*" element={<ErrorPage />} />

@@ -18,7 +18,7 @@ const Home = ({ setCurrentPage }) => {
                 can explore, learn, and grow.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to={'about'} className="btn btn-primary">Learn More</Link>
+                <Link to={'/about'} className="btn btn-primary">Learn More</Link>
                 <Link
                 to={'contact'}
                   className="btn border border-primary text-primary hover:bg-primary/10"
