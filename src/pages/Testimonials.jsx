@@ -198,7 +198,7 @@ const Testimonials = ({ setCurrentPage }) => {
             so many parents trust us with their children's early education.
           </p>
           <Link 
-          to={'/Kids-Zone-Pre-School/contact'}
+          to={'/contact'}
             className="btn btn-primary"
             onClick={() => setCurrentPage('contact')}
           >

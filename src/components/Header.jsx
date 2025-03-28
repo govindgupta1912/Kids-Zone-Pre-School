@@ -19,7 +19,7 @@ const Header = ({ setCurrentPage, currentPage }) => {
     <header className="bg-white shadow-md -top-2 z-10 sticky">
       <div className="container py-4 flex items-center justify-between">
         <div className="flex items-center">
-          <Link to={`/Kids-Zone-Pre-School`} >
+          <Link to={``} >
           <div className="text-2xl font-bold text-primary">
             <span onClick={() => {setCurrentPage('home');
               setIsMenuOpen(false)}} className="cursor-pointer">

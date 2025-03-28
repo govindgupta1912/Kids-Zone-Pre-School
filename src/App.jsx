@@ -73,7 +73,7 @@ const approuter = createBrowserRouter(
   createRoutesFromElements(
     <>
    
-    <Route path="Kids-Zone-Pre-School" element={<App />}>
+    <Route path="" element={<App />}>
       <Route index element={<Home />} /> {/* Default Route for "/" */}
       <Route path="about" element={<About />} />
       <Route path="programs" element={<Programs />} />

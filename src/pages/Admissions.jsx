@@ -25,10 +25,10 @@ const Admissions = ({ setCurrentPage }) => {
               <h3 className="text-xl font-bold mb-4 text-primary">Admissions are now open!</h3>
               <p className="mb-4">We are currently accepting applications for the upcoming academic year.</p>
               <Link
-               to={'/Kids-Zone-Pre-School/contact'}
+               to={'/contact'}
               
               className="btn btn-primary"
-                onClick={() => setCurrentPage('contact')}
+               
               >
                 Contact Us</Link>
             </div>

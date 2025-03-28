@@ -220,7 +220,7 @@ const Facilities = ({ setCurrentPage }) => {
             Our staff will be happy to show you around and answer any questions you might have.
           </p>
           <Link
-              to={'/Kids-Zone-Pre-Schoo/contact'}
+              to={'/contact'}
             className="btn btn-primary"
             onClick={() => setCurrentPage('contact')}
           >

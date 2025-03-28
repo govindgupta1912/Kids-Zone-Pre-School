@@ -157,7 +157,7 @@ const Programs = ({ setCurrentPage }) => {
           <Link
             className="btn btn-primary"
             onClick={() => setCurrentPage('contact')}
-            to={'/Kids-Zone-Pre-School/contact'}
+            to={'/contact'}
           >
             Schedule a Visit
           </Link>

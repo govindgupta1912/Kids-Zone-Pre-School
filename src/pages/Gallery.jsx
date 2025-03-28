@@ -216,7 +216,7 @@ const Gallery = () => {
             Schedule a visit to our campus today!
           </p>
           <Link
-           to={'/Kids-Zone-Pre-School/contact'} 
+           to={'/contact'} 
             className="btn btn-primary"
             onClick={() => setCurrentPage('contact')}
           >

@@ -18,9 +18,9 @@ const Home = ({ setCurrentPage }) => {
                 can explore, learn, and grow.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to={'/Kids-Zone-Pre-School/about'} className="btn btn-primary">Learn More</Link>
+                <Link to={'about'} className="btn btn-primary">Learn More</Link>
                 <Link
-                to={'/Kids-Zone-Pre-School/contact'}
+                to={'contact'}
                   className="btn border border-primary text-primary hover:bg-primary/10"
                   onClick={() => setCurrentPage('contact')}
                 >
@@ -124,7 +124,7 @@ const Home = ({ setCurrentPage }) => {
           <h2 className="text-3xl font-bold mb-4">Admissions are now open!</h2>
           <p className="text-xl mb-8">From Playgroup to Kindergarten</p>
           <Link
-          to={'/Kids-Zone-Pre-School/contact'}
+          to={'contact'}
           className="bg-white text-primary hover:bg-gray-100 btn"
             onClick={() => setCurrentPage('contact')}>
             Contact us
